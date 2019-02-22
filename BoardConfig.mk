@@ -44,6 +44,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := emerald,2e,yk673v6_lwg62_64,Teracube_2e
 
+# APEX
+DEXPREOPT_GENERATE_APEX_IMAGE := true
+
 # Bootloader
 TARGET_NO_BOOTLOADER := true
 TARGET_BOOTLOADER_BOARD_NAME := yk673v6_lwg62_64
