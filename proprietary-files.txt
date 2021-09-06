@@ -140,6 +140,11 @@ vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
 vendor/bin/hw/camerahalserver
 vendor/etc/init/camerahalserver.rc
 
+# Charger
+bin/kpoc_charger
+etc/init/kpoc_charger.rc
+lib/libshowlogo.so
+
 # DRM-Hardware
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc

@@ -148,6 +148,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service
 
+# Charger
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0 \
+    libsuspend
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-service \
