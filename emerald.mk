@@ -33,8 +33,9 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # bootctrl HAL and HIDL
 PRODUCT_PACKAGES += \
-        android.hardware.boot@1.0-impl \
-        android.hardware.boot@1.0-service
+    android.hardware.boot@1.0-impl \
+    android.hardware.boot@1.0-service \
+    android.hardware.boot@1.1-mtkimpl.recovery
 
 # A/B OTA dexopt package
 PRODUCT_PACKAGES += otapreopt_script
