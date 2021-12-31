@@ -13,4 +13,6 @@
 # limitations under the License.
 
 # Device Specific Configuration.
-DEVICE_PATH := device/teracube/emerald
+
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
