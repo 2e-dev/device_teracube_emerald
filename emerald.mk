@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service \
     android.hardware.media.omx@1.0-service
 
+# Public Libraries
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # Renderscript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
