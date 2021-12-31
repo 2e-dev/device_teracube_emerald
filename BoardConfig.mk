@@ -19,7 +19,7 @@ AB_OTA_UPDATER := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 
-AB_OTA_PARTITIONS := \
+AB_OTA_PARTITIONS += \
     boot \
     dtbo \
     product \
@@ -27,6 +27,12 @@ AB_OTA_PARTITIONS := \
     vendor \
     vbmeta \
     vbmeta_system
+
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_system=true \
+    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    FILESYSTEM_TYPE_system=ext4 \
+    POSTINSTALL_OPTIONAL_system=true
 
 # Architecture
 TARGET_ARCH := arm64
