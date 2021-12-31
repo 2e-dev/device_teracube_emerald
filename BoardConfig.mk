@@ -12,6 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+DEVICE_PATH := device/teracube/emerald
+
+# A/B
+AB_OTA_UPDATER := true
+BOARD_USES_RECOVERY_AS_BOOT := true
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
+
+AB_OTA_PARTITIONS := \
+    boot \
+    dtbo \
+    product \
+    system \
+    vendor \
+    vbmeta \
+    vbmeta_system
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a

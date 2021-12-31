@@ -14,6 +14,38 @@
 
 # Device Specific Configuration.
 
+# A/B
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
+PRODUCT_HOST_PACKAGES += \
+    delta_generator \
+    shflags \
+    brillo_update_payload \
+    bsdiff \
+    simg2img
+
+PRODUCT_PACKAGES_DEBUG += \
+    update_engine_client \
+    bootctl
+
+# bootctrl HAL and HIDL
+PRODUCT_PACKAGES += \
+        android.hardware.boot@1.0-impl \
+        android.hardware.boot@1.0-service
+
+# A/B OTA dexopt package
+PRODUCT_PACKAGES += otapreopt_script
+
+# Tell the system to enable copying odexes from other partition.
+PRODUCT_PACKAGES += \
+        cppreopts.sh
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cp_system_other_odex=1
+
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
