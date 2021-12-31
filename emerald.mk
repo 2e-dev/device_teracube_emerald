@@ -13,3 +13,4 @@
 # limitations under the License.
 
 # Device Specific Configuration.
+DEVICE_PATH := device/teracube/emerald
