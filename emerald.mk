@@ -191,6 +191,23 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
     libprotobuf-cpp-lite-vendorcompat
 
+# Runtime Configuration and fstab
+PRODUCT_PACKAGES += \
+    init.aee.rc \
+    init.ago.rc \
+    init.connectivity.rc \
+    init.modem.rc \
+    init.mt6762.rc \
+    init.mt6765.rc \
+    init.mt6765.usb.rc \
+    init.project.rc \
+    init.sensor_1_0.rc \
+    init.stnfc.rc \
+    fstab.enableswap \
+    fstab.mt6762 \
+    fstab.mt6765 \
+    ueventd.mtk.rc
+
 # TinyXML
 PRODUCT_PACKAGES += \
     libtinyxml
