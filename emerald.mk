@@ -96,6 +96,7 @@ PRODUCT_COPY_FILES += \
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
+    android.hardware.audio.common@6.0-util \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.bluetooth.audio@2.0-impl \
     audio.a2dp.default \
@@ -114,7 +115,10 @@ PRODUCT_PACKAGES += \
     libtinycompress \
     libaudiofoundation \
     libaudiofoundation.vendor \
-    libtinycompress.vendor
+    libtinycompress.vendor \
+    libopus \
+    libvpx \
+    libvorbisidec
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
