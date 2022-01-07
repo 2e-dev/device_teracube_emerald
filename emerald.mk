@@ -15,21 +15,15 @@
 # Device Specific Configuration.
 
 # A/B
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_system=true \
+    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    FILESYSTEM_TYPE_system=ext4 \
+    POSTINSTALL_OPTIONAL_system=true
+
 PRODUCT_PACKAGES += \
-    update_engine \
-    update_engine_sideload \
-    update_verifier
-
-PRODUCT_HOST_PACKAGES += \
-    delta_generator \
-    shflags \
-    brillo_update_payload \
-    bsdiff \
-    simg2img
-
-PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client \
-    bootctl
+    otapreopt_script
 
 # bootctrl HAL and HIDL
 PRODUCT_PACKAGES += \
@@ -37,18 +31,12 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-service \
     android.hardware.boot@1.1-mtkimpl.recovery
 
-# A/B OTA dexopt package
-PRODUCT_PACKAGES += otapreopt_script
-
 # Tell the system to enable copying odexes from other partition.
 PRODUCT_PACKAGES += \
         cppreopts.sh
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cp_system_other_odex=1
-
-# Enable virtual A/B OTA
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
