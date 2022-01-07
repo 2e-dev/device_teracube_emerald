@@ -136,3 +136,5 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # VINTF
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
+
+-include vendor/teracube/emerald/BoardConfigVendor.mk
