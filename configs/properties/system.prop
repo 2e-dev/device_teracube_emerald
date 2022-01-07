@@ -1,0 +1,27 @@
+#
+# from device/mediatek/system/common/system.prop
+#
+ro.product.property_source_order=vendor,product,system
+
+vendor.rild.libpath=mtk-ril.so
+vendor.rild.libargs=-d /dev/ttyC0
+
+wifi.interface=wlan0
+
+# OpenGLES Version
+ro.opengles.version=196610
+
+# WiFi Direct Interface
+wifi.direct.interface=p2p0
+
+# Default USB storage type
+ro.sys.usb.storage.type=mtp
+
+# audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
+# MTK performance properties //TODO: Import mediatek-framework.jar
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
