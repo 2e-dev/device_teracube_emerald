@@ -75,6 +75,10 @@ BUILD_BROKEN_DUP_RULES := true
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
+ifeq ($(EMERALD_DEBUG),true)
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+endif
+
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_TAGS_OFFSET := 0x07880000
 BOARD_KERNEL_OFFSET := 0x00080000
