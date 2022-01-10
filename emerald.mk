@@ -14,6 +14,8 @@
 
 # Device Specific Configuration.
 
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -33,7 +35,12 @@ PRODUCT_PACKAGES += \
 
 # Tell the system to enable copying odexes from other partition.
 PRODUCT_PACKAGES += \
-        cppreopts.sh
+    cppreopts.sh
+
+# Build MT-PL-Utils
+PRODUCT_PACKAGES += \
+    mtk_plpath_utils \
+    mtk_plpath_utils.recovery
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cp_system_other_odex=1
