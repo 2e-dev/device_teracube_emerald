@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-service \
+    android.hardware.boot@1.1-mtkimpl \
     android.hardware.boot@1.1-mtkimpl.recovery
 
 # Tell the system to enable copying odexes from other partition.
