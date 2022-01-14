@@ -90,11 +90,29 @@ LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
+LOCAL_MODULE       := fstab.mt6762.ramdisk
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := etc/fstab.mt6762
+LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/first_stage_ramdisk
+LOCAL_MODULE_STEM := fstab.mt6762
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
 LOCAL_MODULE       := fstab.mt6765
 LOCAL_MODULE_TAGS  := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES    := etc/fstab.mt6765
 LOCAL_MODULE_PATH  := $(TARGET_OUT_VENDOR_ETC)
+include $(BUILD_PREBUILT)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE       := fstab.mt6765.ramdisk
+LOCAL_MODULE_TAGS  := optional
+LOCAL_MODULE_CLASS := ETC
+LOCAL_SRC_FILES    := etc/fstab.mt6765
+LOCAL_MODULE_PATH := $(TARGET_RECOVERY_ROOT_OUT)/first_stage_ramdisk
+LOCAL_MODULE_STEM := fstab.mt6765
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)

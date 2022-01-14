@@ -248,6 +248,8 @@ PRODUCT_PACKAGES += \
     init.stnfc.rc \
     fstab.mt6762 \
     fstab.mt6765 \
+    fstab.mt6762.ramdisk \
+    fstab.mt6765.ramdisk \
     ueventd.mtk.rc
 
 # Seccomp
