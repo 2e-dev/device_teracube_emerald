@@ -129,6 +129,8 @@ TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_SYSTEM := system
 TARGET_COPY_OUT_VENDOR := vendor
 
+BOARD_ROOT_EXTRA_FOLDERS += metadata
+
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/configs/properties/system.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/configs/properties/vendor.prop
