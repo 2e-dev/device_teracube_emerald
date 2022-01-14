@@ -47,12 +47,12 @@
     <hal format="hidl">
         <name>android.hardware.boot</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.1</version>
         <interface>
             <name>IBootControl</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IBootControl/default</fqname>
+        <fqname>@1.1::IBootControl/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.camera.provider</name>
@@ -490,5 +490,22 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.0::IThhDevice/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.mediatek.hardware.gpu</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IGraphicExt</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.light</name>
+        <fqname>ILights/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>android.hardware.power</name>
+        <fqname>IPower/default</fqname>
     </hal>
 </manifest>
