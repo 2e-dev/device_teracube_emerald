@@ -38,6 +38,7 @@ TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
+TARGET_BOARD_PLATFORM := mt6765
 
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := emerald,2e,yk673v6_lwg62_64,Teracube_2e
