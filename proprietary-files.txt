@@ -1321,3 +1321,9 @@ vendor/lib64/libwpa_client.so
 vendor/lib/libeffectsconfig.so
 vendor/lib/libhwc2on1adapter.so
 vendor/lib/libhwc2onfbadapter.so
+
+# Bootcontrol 
+vendor/bin/hw/android.hardware.boot@1.1-service
+vendor/etc/init/android.hardware.boot@1.1-service.rc
+-vendor/etc/vintf/manifest/android.hardware.boot@1.1.xml
+
