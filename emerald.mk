@@ -31,10 +31,8 @@ PRODUCT_PACKAGES += \
 
 # bootctrl HAL and HIDL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0 \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service \
     android.hardware.boot@1.1 \
+    android.hardware.boot@1.1-service \
     android.hardware.boot@1.1-mtkimpl \
     android.hardware.boot@1.1-mtkimpl.recovery
 
@@ -263,9 +261,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/seccomp/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     $(LOCAL_PATH)/configs/seccomp/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy
 
+# Sensors
+PRODUCT_PACKAGES += libsensorndkbridge
+
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-impl.vendor
+    android.hardware.thermal@1.0-impl
 
 # TinyXML
 PRODUCT_PACKAGES += \
