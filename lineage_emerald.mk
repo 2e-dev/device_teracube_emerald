@@ -21,7 +21,6 @@ EMERALD_DEBUG := true
 
 # Inherit from emerald device
 $(call inherit-product, $(LOCAL_PATH)/emerald.mk)
-$(call inherit-product, device/teracube/emerald-kernel/targets.mk)
 
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
