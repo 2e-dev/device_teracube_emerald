@@ -19,4 +19,6 @@
 <!-- Phone app resources that may need to be customized
      for different hardware or product builds. -->
 <resources>
+    <!-- Flag indicating if hac is enabled -->
+    <bool name="hac_enabled">true</bool>
 </resources>
