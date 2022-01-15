@@ -89,4 +89,7 @@
          Otherwise, the device may fail to wake out of suspend reliably.
          The default is false. -->
     <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
+
+    <!-- Whether a software navigation bar should be shown.-->
+    <bool name="config_showNavigationBar">true</bool>
 </resources>
