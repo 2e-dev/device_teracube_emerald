@@ -222,7 +222,8 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_PACKAGES += \
     EmeraldFrameworks \
-    EmeraldSystemUI
+    EmeraldSystemUI \
+    EmeraldTelephony
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
