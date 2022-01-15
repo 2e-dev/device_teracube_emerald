@@ -137,4 +137,18 @@
          * The device must be provisioned with HDCP keys (for protected content).
     -->
     <bool name="config_enableWifiDisplay">true</bool>
+
+    <!-- Whether the display cutout region of the main built-in display should be forced to
+         black in software (to avoid aliasing or emulate a cutout that is not physically existent).
+    -->
+     <bool name="config_fillMainBuiltInDisplayCutout">false</bool>
+     <string translatable="false" name="config_mainBuiltInDisplayCutout">
+         M 0,0
+         L -26,0
+         L -26,26
+         L 26,26
+         L 26,0
+         Z
+         @dp
+     </string>
 </resources>
