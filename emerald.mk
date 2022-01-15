@@ -16,6 +16,8 @@
 
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
+PRODUCT_SHIPPING_API_LEVEL := 30
+
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -29,6 +31,7 @@ PRODUCT_PACKAGES += \
 
 # bootctrl HAL and HIDL
 PRODUCT_PACKAGES += \
+    android.hardware.boot@1.0 \
     android.hardware.boot@1.0-impl \
     android.hardware.boot@1.0-service \
     android.hardware.boot@1.1 \
@@ -273,18 +276,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     hostapd \
     libwpa_client \
-    wpa_supplicant
+    wpa_supplicant \
+    android.hardware.wifi@1.0-service-lazy \
+    android.hardware.wifi.hostapd
 
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
-
-PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service
-
-PRODUCT_SHIPPING_API_LEVEL := 30
 
 # Inherit proprietary aspects if they exist.
 $(call inherit-product-if-exists, vendor/teracube/emerald/emerald-vendor.mk)
