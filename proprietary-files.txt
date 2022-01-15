@@ -159,12 +159,14 @@ vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib/hw/gralloc.default.so
 vendor/lib/hw/gralloc.rogue.so
 vendor/lib/hw/memtrack.mt6765.so
+vendor/lib/libstagefrighthw.so
 vendor/lib/libdrm.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/gralloc.default.so
 vendor/lib64/hw/gralloc.rogue.so
 vendor/lib64/hw/hwcomposer.mt6765.so
 vendor/lib64/hw/memtrack.mt6765.so
+vendor/lib64/libstagefrighthw.so
 vendor/lib64/libdrm.so
 
 # Fingerprint
