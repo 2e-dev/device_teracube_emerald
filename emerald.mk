@@ -219,6 +219,10 @@ PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service \
     android.hardware.media.omx@1.0-service
 
+# Overlays
+PRODUCT_PACKAGES += \
+    EmeraldFrameworks
+
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
