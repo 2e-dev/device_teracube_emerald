@@ -90,6 +90,37 @@
          The default is false. -->
     <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
 
+    <!-- User activity timeout: Maximum screen dim duration as a percentage of screen off timeout.
+    
+         This resource is similar to config_maximumScreenDimDuration but the maximum
+         screen dim duration is defined as a ratio of the overall screen off timeout
+         instead of as an absolute value in milliseconds.  This is useful for reducing
+         the dim duration when the screen off timeout is very short.
+    
+         When computing the screen dim duration, the power manager uses the lesser
+         of the effective durations expressed by config_maximumScreenDimDuration and
+         config_maximumScreenDimRatio.
+    
+         This value must be between 0% and 100%.  If the value is zero, the screen will not
+         dim before the device goes to sleep.
+    -->
+    <fraction name="config_maximumScreenDimRatio">20.000004%</fraction>
+
+    <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
+         for debouncing the light sensor.  Different constants are used to debounce the light sensor
+         when adapting to brighter or darker environments.  This parameter controls how quickly
+         brightness changes occur in response to an observed change in light level that exceeds the
+         hysteresis threshold. -->
+    <integer name="config_autoBrightnessBrighteningLightDebounce">4000</integer>
+    <integer name="config_autoBrightnessDarkeningLightDebounce">8000</integer
+
+    <!-- Fast brightness animation ramp rate in brightness units per second-->
+    <integer name="config_brightness_ramp_rate_fast">180</integer>
+
+    <!-- Slow brightness animation ramp rate in brightness units per second-->
+    <integer name="config_brightness_ramp_rate_slow">60</integer>
+    <integer name="config_longPressOnHomeBehavior">0</integer>
+
     <!-- Whether a software navigation bar should be shown.-->
     <bool name="config_showNavigationBar">true</bool>
 
@@ -106,25 +137,25 @@
     <!-- Flag specifying whether VoLTE should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
-     <bool name="config_carrier_volte_available">true</bool>
-     <bool name="config_carrier_volte_tty_supported">true</bool>
+    <bool name="config_carrier_volte_available">true</bool>
+    <bool name="config_carrier_volte_tty_supported">true</bool>
 
     <!-- Flag specifying whether WFC over IMS should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
-     <bool name="config_carrier_wfc_ims_available">true</bool>
+    <bool name="config_carrier_wfc_ims_available">true</bool>
 
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
-     <bool name="config_cellBroadcastAppLinks">true</bool>
+    <bool name="config_cellBroadcastAppLinks">true</bool>
 
     <!-- Flag specifying whether VoLTE is available on device -->
-     <bool name="config_device_volte_available">true</bool>
+    <bool name="config_device_volte_available">true</bool>
 
     <!-- Flag specifying whether VT is available on device -->
-     <bool name="config_device_vt_available">true</bool>
+    <bool name="config_device_vt_available">true</bool>
 
     <!-- Flag specifying whether WFC over IMS is available on device -->
-     <bool name="config_device_wfc_ims_available">true</bool>
+    <bool name="config_device_wfc_ims_available">true</bool>
 
     <!-- Here are a few of them:
          * The WiFi radio must support WiFi P2P.
@@ -141,8 +172,8 @@
     <!-- Whether the display cutout region of the main built-in display should be forced to
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
     -->
-     <bool name="config_fillMainBuiltInDisplayCutout">false</bool>
-     <string translatable="false" name="config_mainBuiltInDisplayCutout">
+    <bool name="config_fillMainBuiltInDisplayCutout">false</bool>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">
          M 0,0
          L -26,0
          L -26,26
@@ -150,9 +181,9 @@
          L 26,0
          Z
          @dp
-     </string>
+    </string>
 
     <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
          on the headphone/microphone jack. When false use the older uevent framework. -->
-     <bool name="config_useDevInputEventForAudioJack">true</bool>
+    <bool name="config_useDevInputEventForAudioJack">true</bool>
 </resources>
