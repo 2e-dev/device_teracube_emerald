@@ -169,6 +169,14 @@
     -->
     <bool name="config_enableWifiDisplay">true</bool>
 
+    <!--   Wifi display: default resolution -->
+    <!--   Notice: MT6589 encoder doesn't support 1080p -->
+    <!--     0: 720p,30fps (Menu is disabled)  -->
+    <!--     1: 1080p,30fps(Menu is disabled)  -->
+    <!--     2: 1080p,30fps(Menu is enabled)  -->
+    <!--     3: 720p,30fps (Menu is enabled) -->
+    <integer name="wfd_display_default_resolution">0</integer>
+
     <!-- Whether the display cutout region of the main built-in display should be forced to
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
     -->
