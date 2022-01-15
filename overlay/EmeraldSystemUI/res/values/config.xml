@@ -16,4 +16,7 @@
 */
 -->
 <resources>
+    <!-- Status bar padding -->
+    <dimen name="status_bar_padding_start">18dp</dimen>
+    <dimen name="status_bar_padding_end">18dp</dimen>
 </resources>
