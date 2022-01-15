@@ -131,4 +131,8 @@ drm.service.enabled=true
 ro.opengles.version=196610
 ro.hardware.egl=meow
 
+# Hardware Platform
 ro.hardware=mt6765
+
+# LCD Density
+ro.sf.lcd_density=320

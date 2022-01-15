@@ -16,7 +16,12 @@
 
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
+# Shipping API Level
 PRODUCT_SHIPPING_API_LEVEL := 30
+
+# Screen density
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
