@@ -221,7 +221,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    EmeraldFrameworks
+    EmeraldFrameworks \
+    EmeraldSystemUI
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
