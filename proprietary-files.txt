@@ -48,6 +48,7 @@ system_ext/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
+vendor/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so
 vendor/lib/libbluetoothem_mtk.so
 vendor/lib/libbluetooth_audio_session.so
 vendor/lib/libbluetooth_audio_session_mediatek.so
@@ -1325,6 +1326,7 @@ vendor/lib64/libwpa_client.so
 vendor/lib/libeffectsconfig.so
 vendor/lib/libhwc2on1adapter.so
 vendor/lib/libhwc2onfbadapter.so
+vendor/lib/libwpa_client.so
 
 # Bootcontrol 
 vendor/bin/hw/android.hardware.boot@1.1-service
