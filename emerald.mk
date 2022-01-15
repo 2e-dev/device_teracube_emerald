@@ -223,7 +223,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     EmeraldFrameworks \
     EmeraldSystemUI \
-    EmeraldTelephony
+    EmeraldTelephony \
+    EmeraldBluetooth
 
 # Partitions
 PRODUCT_BUILD_SUPER_PARTITION := false
