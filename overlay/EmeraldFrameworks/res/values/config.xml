@@ -92,4 +92,7 @@
 
     <!-- Whether a software navigation bar should be shown.-->
     <bool name="config_showNavigationBar">true</bool>
+
+    <!-- Specify that device has an intrusive LED. -->
+    <bool name="config_intrusiveNotificationLed">true</bool>
 </resources>
