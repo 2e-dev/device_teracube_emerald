@@ -526,8 +526,6 @@ vendor/etc/init/hw/meta_init.rc
 vendor/etc/init/hw/multi_init.rc
 
 # Misc
-system_ext/app/Nfc_st/lib/arm64/libnfc_st_dta_jni.so
-system_ext/app/Nfc_st/lib/arm64/libstnfc_nci_jni.so
 -system_ext/app/Nfc_st/Nfc_st.apk
 -system_ext/app/STNFCDta/STNFCDta.apk
 system_ext/bin/aee

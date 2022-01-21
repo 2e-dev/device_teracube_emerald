@@ -19,14 +19,18 @@ include $(CLEAR_VARS)
 
 VENDOR_SYMLINKS := \
     $(TARGET_OUT_VENDOR)/lib/hw \
-    $(TARGET_OUT_VENDOR)/lib64/hw
+    $(TARGET_OUT_VENDOR)/lib64/hw \
+    $(TARGET_OUT_SYSTEM_EXT)/app/Nfc_st/lib/arm64
 
 $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	$(hide) echo "Making vendor symlinks"
 	@mkdir -p $(TARGET_OUT_VENDOR)/lib/hw
 	@mkdir -p $(TARGET_OUT_VENDOR)/lib64/hw
+	@mkdir -p $(TARGET_OUT_SYSTEM_EXT)/app/Nfc_st/lib/arm64
 	@ln -sf libSoftGatekeeper.so $(TARGET_OUT_VENDOR)/lib/hw/gatekeeper.default.so
 	@ln -sf libSoftGatekeeper.so $(TARGET_OUT_VENDOR)/lib64/hw/gatekeeper.default.so
+	@ln -sf /system/system_ext/lib64/libnfc_st_dta_jni.so $(TARGET_OUT_SYSTEM_EXT)/app/Nfc_st/lib/arm64/libnfc_st_dta_jni.so
+	@ln -sf /system/system_ext/lib64/libstnfc_nci_jni.so $(TARGET_OUT_SYSTEM_EXT)/app/Nfc_st/lib/arm64/libstnfc_nci_jni.so
 	$(hide) touch $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(VENDOR_SYMLINKS)
