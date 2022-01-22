@@ -93,7 +93,6 @@ persist.vendor.radio.fd.off.counter=50
 persist.vendor.radio.fd.r8.counter=150
 persist.vendor.radio.fd.off.r8.counter=50
 telephony.active_modems.max_count=2
-vendor.connsys.driver.ready=yes
 vendor.mtk.vdec.waitkeyframeforplay=9
 wifi.concurrent.interface=ap0
 
