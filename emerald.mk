@@ -257,6 +257,7 @@ PRODUCT_PACKAGES += \
 
 # Runtime Configuration and fstab
 PRODUCT_PACKAGES += \
+    android.hardware.wifi.supplicant-service.rc \
     init.aee.rc \
     init.ago.rc \
     init.connectivity.rc \
