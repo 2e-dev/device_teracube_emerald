@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This XML file declares which signature|privileged permissions should be granted to privileged
+applications that come with the platform
+-->
+<permissions>
+    <privapp-permissions package="com.android.contacts">
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.simprocessor">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.systemui">
+        <permission name="android.permission.REBOOT" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.ppl">
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MASTER_CLEAR"/>
+        <permission name="android.permission.REBOOT"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.dataprotection">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.fmradio">
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.ACCESS_BROADCAST_RADIO"/>
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.omacp">
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        <permission name="android.permission.VIBRATE"/>
+        <permission name="android.permission.ACCESS_NETWORK_STATE"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.WAKE_LOCK"/>
+        <permission name="android.permission.RECEIVE_WAP_PUSH"/>
+        <permission name="android.permission.FOREGROUND_SERVICE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.gallery3d">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.dialer">
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.CALL_PRIVILEGED"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.CREATE_USERS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK"/>
+        <permission name="com.android.voicemail.permission.WRITE_VOICEMAIL"/>
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS"/>
+        <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.autobootcontroller">
+        <permission name="android.permission.MANAGE_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.duraspeed">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.mediatek.security">
+        <permission name="android.permission.STATUS_BAR"/>
+    </privapp-permissions>
+</permissions>
