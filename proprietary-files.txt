@@ -492,7 +492,7 @@ vendor/etc/init/vibrator-mtk-default.rc
 vendor/lib/hw/vibrator.default.so
 vendor/lib64/hw/vibrator.default.so
 
-#rootdir
+# Rootdir
 system_ext/bin/emdlogger1
 system_ext/etc/init/aee_aed.rc
 system_ext/etc/init/aee_aed64.rc
@@ -509,6 +509,7 @@ vendor/bin/STFlashTool
 vendor/bin/wlan_assistant
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
+vendor/etc/init/android.hardware.wifi.supplicant-service.rc
 vendor/etc/init/lights-mtk-default.rc
 vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 vendor/etc/init/microtrust.init_thh.rc
