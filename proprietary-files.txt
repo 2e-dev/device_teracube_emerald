@@ -261,11 +261,9 @@ lib/libmtk_vt_service.so
 lib/libmtk_vt_wrapper.so
 lib/libmtkperf_client.so
 lib/libsignal.so
-lib/libsink.so
 lib/libsource.so
 lib/libvcodec_cap.so
 lib/libvcodec_capenc.so
-lib/libvt_avsync.so
 lib64/libmtkperf_client.so
 lib64/libmtk_vt_wrapper.so
 lib64/libvcodec_cap.so
@@ -273,6 +271,12 @@ lib64/libvcodec_capenc.so
 -priv-app/ImsService/ImsService.apk
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
+# Rebuild from BSP - 11/RP1A.200720.011/p1k61v164bspP16:user/release-keys
+lib/libsink.so|766b484ab2651be086fb1f7422baba86766a7a77
+lib/libvt_avsync.so|7bc3c6d7d10e68280a5f139043bf0e822ced6800
+lib64/libsink.so|e1de000c9d8836fc0655ad86388c454f613e5661
+lib64/libvt_avsync.so|22ad8ff29421feb364399488bbb62d55c43c3c8e
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod
