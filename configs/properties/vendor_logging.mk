@@ -50,6 +50,7 @@ PRODUCT_PROPERTY_OVERRIDES +=  \
     persist.log.tag.ImsVTProvider=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.IsimFileHandler=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.IsimRecords=$(VENDOR_LOG_LEVEL_I) \
+    persist.log.tag.MDP=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.MtkAdnRecord=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.MtkCsimFH=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.MtkDc=$(VENDOR_LOG_LEVEL_I) \
