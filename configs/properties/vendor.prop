@@ -388,3 +388,8 @@ ro.hardware=mt6765
 
 # LCD Density
 ro.sf.lcd_density=320
+
+# Force enable IMS services
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1

@@ -238,6 +238,42 @@ vendor/lib64/egl/libMEOW_trace.so
 vendor/lib64/hw/vulkan.mt6765.so
 vendor/lib64/libOpenCL.so
 
+# IMS
+bin/vtservice
+etc/init/init.vtservice.rc
+-framework/mediatek-common.jar
+-framework/mediatek-framework.jar
+-framework/mediatek-ims-base.jar
+-framework/mediatek-ims-common.jar
+framework/mediatek-ims-extension-plugin.jar
+framework/mediatek-ims-legacy.jar
+framework/mediatek-ims-wwop-common.jar
+-framework/mediatek-telecom-common.jar
+-framework/mediatek-telephony-base.jar
+-framework/mediatek-telephony-common.jar
+framework/mediatek-wfo-legacy.jar
+lib/libcomutils.so
+lib/libimsma.so
+lib/libimsma_adapt.so
+lib/libimsma_rtp.so
+lib/libimsma_socketwrapper.so
+lib/libmtk_vt_service.so
+lib/libmtk_vt_wrapper.so
+lib/libmtkperf_client.so
+lib/libsignal.so
+lib/libsink.so
+lib/libsource.so
+lib/libvcodec_cap.so
+lib/libvcodec_capenc.so
+lib/libvt_avsync.so
+lib64/libmtkperf_client.so
+lib64/libmtk_vt_wrapper.so
+lib64/libvcodec_cap.so
+lib64/libvcodec_capenc.so
+-priv-app/ImsService/ImsService.apk
+system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
@@ -258,6 +294,18 @@ vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 vendor/bin/hw/android.hardware.lights-service.mediatek
 vendor/lib/hw/lights.mt6765.so
 vendor/lib64/hw/lights.mt6765.so
+
+# Media
+lib/libmtkavenhancements.so
+lib64/libmtkavenhancements.so
+lib64/extractors/libmtkadpcmextractor.so
+lib64/extractors/libmtkalacextractor.so
+lib64/extractors/libmtkapeextractor.so
+lib64/extractors/libmtkasfextractor.so
+lib64/extractors/libmtkaviextractor.so
+lib64/extractors/libmtkflvextractor.so
+lib64/extractors/libmtkmp3extractor.so
+lib64/extractors/libmtkmpeg2extractor.so
 
 # Mediatek
 vendor/bin/hw/android.hardware.sensors@2.0-service-mediatek
