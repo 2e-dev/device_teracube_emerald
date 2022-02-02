@@ -1,0 +1,27 @@
+#fpsensor
+type fpsensor_fp_device, dev_type;
+type fp_ext_svc2_service, hwservice_manager_type;
+#add for fpsensor fingerprint
+allow hal_fingerprint_default fpsensor_fp_device:chr_file {open read write ioctl};
+allow hal_fingerprint_default fuse:dir {search};
+allow hal_fingerprint_default mnt_user_file:dir {search};
+allow hal_fingerprint_default mnt_user_file:lnk_file {read};
+allow hal_fingerprint_default storage_file:lnk_file {read};
+
+#add for fpsensor fingerprint gesture
+allow hal_fingerprint_default uhid_device:chr_file {open ioctl write read};
+
+#ree 需要下面两行
+#allow hal_fingerprint_default fingerprintd_data_file:dir{write search add_name};
+#allow hal_fingerprint_default fingerprintd_data_file:file{create read write open rename};
+
+#add for test app
+allow hal_fingerprint_default  fp_ext_svc2_service:hwservice_manager {add};
+#allow hal_fingerprint_default  default_android_hwservice:hwservice_manager{add};
+allow platform_app     fp_ext_svc2_service:hwservice_manager {find};
+allow platform_app      hal_fingerprint_default:binder {call transfer};
+allow hal_fingerprint_default platform_app:binder {call};
+# add factory test
+allow untrusted_app_29     fp_ext_svc2_service:hwservice_manager {find};
+allow untrusted_app_29     hal_fingerprint_default:binder {call transfer};
+allow hal_fingerprint_default     untrusted_app_29:binder {call transfer};

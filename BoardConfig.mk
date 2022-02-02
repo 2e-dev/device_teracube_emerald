@@ -139,7 +139,8 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 100
 TARGET_USERIMAGES_USE_F2FS := true
 
 # SEPolicy
--include device/mediatek/sepolicy/SEPolicy.mk
+include device/mediatek/sepolicy/BoardSEPolicyConfig.mk
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # VINTF
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
