@@ -1369,6 +1369,7 @@ vendor/etc/vendor-apns-conf.xml
 vendor/etc/virtual-spn-conf-by-efgid1.xml
 vendor/etc/virtual-spn-conf-by-efpnn.xml
 vendor/etc/virtual-spn-conf-by-efspn.xml
+-vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 vendor/lib64/libeffectsconfig.so
 vendor/lib64/libkeymaster4.so
 vendor/lib64/libkeymaster4support.so
